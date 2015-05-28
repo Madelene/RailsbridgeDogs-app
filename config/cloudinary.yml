@@ -1,0 +1,18 @@
+development:
+  cloud_name: madelene
+  api_key: '214722863116226'
+  api_secret: fqJKa75-0bgjGsBO9d6v_ZqH4EU
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: madelene
+  api_key: '214722863116226'
+  api_secret: fqJKa75-0bgjGsBO9d6v_ZqH4EU
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: madelene
+  api_key: '214722863116226'
+  api_secret: fqJKa75-0bgjGsBO9d6v_ZqH4EU
+  enhance_image_tag: true
+  static_image_support: false
