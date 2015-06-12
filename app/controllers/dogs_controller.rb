@@ -4,8 +4,9 @@ class DogsController < ApplicationController
   # GET /dogs
   # GET /dogs.json
   def index
-    @dogs = Dog.all
+    @dogs = Dog.all.sort_by{|d| d.name}
   end
+
 
   # GET /dogs/1
   # GET /dogs/1.json
@@ -69,10 +70,6 @@ class DogsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def dog_params
-
-      require(:dog).permit(:name, :age, :color, :picture)
-
-      params.require(:dog).permit(:name, :age, :color, :picture)
-
+      params.require(:dog).permit(:name, :age, :color, :picture, :breed_id)
     end
 end
